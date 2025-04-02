@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "i-ching.cli.cs": {
+      "commandName": "Project",
+      "commandLineArgs": "i-ching"
+    }
+  }
+}
