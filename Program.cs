@@ -10,8 +10,9 @@ namespace i_ching.cli.cs;
 
 public partial class Program
 {
+    private static string _projectName = "i-ching.cli.cs";
     private static string? _currentPath = "";
-    private static readonly CommandLineApplication App = new() { Name = "i-ching.cli.cs" };
+    private static readonly CommandLineApplication App = new() { Name = _projectName };
 
     private static int Main(string[] args)
     {
@@ -44,7 +45,7 @@ public partial class Program
 
         // ! Logger 輸入參數
         var argString = args.Aggregate("", (current, arg) => current + (arg + " "));
-        Console.WriteLine($"輸入參數:i-ching.cli.cs {argString}");
+        Console.WriteLine($"輸入參數:{_projectName} {argString}");
         Console.WriteLine($"====================");
 
         sw.Stop();
@@ -140,7 +141,7 @@ public partial class Program
 
 
         Console.WriteLine($"================", Color.Blue);
-        Console.WriteLine($"csharp.cli find-id -? 可以查第二層說明", Color.Yellow);
+        Console.WriteLine($"{_projectName} find-id -? 可以查第二層說明", Color.Yellow);
         Console.WriteLine($"================", Color.Blue);
         Console.WriteLine($" AssemblyVersion: {assemblyVersion}\r\n FileVersion: {fileVersion}\r\n 回傳值為: {ret}");
         Console.WriteLine($"^^^^程式結束^^^^", Color.Green);
