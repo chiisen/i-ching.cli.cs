@@ -60,7 +60,7 @@ dotnet tool uninstall -g i-ching.cli.cs
 .\install.bat
 ```
 會循序進行清理目錄、打包、移除套件、安裝套件並顯示套件安裝版本  
-如果執行失敗可以試試看下面指令，指定 sdk 版本，因為目前還不支援 sdk 9 以上的版本
+如果執行失敗可以試試看下面指令，指定 sdk 版本，因為目前還不支援 sdk 10 以上的版本
  ```bash=
 dotnet new globaljson --sdk-version 10.0.101
 ```
