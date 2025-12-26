@@ -62,9 +62,9 @@ dotnet tool uninstall -g i-ching.cli.cs
 會循序進行清理目錄、打包、移除套件、安裝套件並顯示套件安裝版本  
 如果執行失敗可以試試看下面指令，指定 sdk 版本，因為目前還不支援 sdk 9 以上的版本
  ```bash=
-dotnet new globaljson --sdk-version 9.0.201
+dotnet new globaljson --sdk-version 10.0.101
 ```
-最後的一串數字 9.0.201 是 sdk 版本號，可以用下面指令查詢目前已安裝的 sdk 版本
+最後的一串數字 10.0.101 是 sdk 版本號，可以用下面指令查詢目前已安裝的 sdk 版本
  ```bash=
 dotnet --info
 ```
